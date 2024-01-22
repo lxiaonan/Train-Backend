@@ -1,13 +1,13 @@
-package com.xiaonan.trainbackend;
+package com.xiaonan.train.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TrainBackendApplication {
+public class MemberApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TrainBackendApplication.class, args);
+        SpringApplication.run(MemberApplication.class, args);
     }
 
 }
