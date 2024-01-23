@@ -1,0 +1,10 @@
+server:
+  port: 8200
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: train-member
+          uri: http://127.0.0.1:8201
+          predicates:
+            - Path=/member/**
