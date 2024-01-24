@@ -1,0 +1,4 @@
+GET http://localhost:8201/member/member/list
+Accept: application/json
+
+###

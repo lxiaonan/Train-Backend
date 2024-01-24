@@ -72,3 +72,15 @@ yml文件优先级：自身config下的文件>引入依赖包config下的文件>
 # 遇到问题
 ## 网关模块
 在配置网关模块的时候，遇到问题：配置了对应模块的内网ip，但是是使用http://localhost 这样会导致无法转发，将localhost更改为127.0.0.1，解决问题
+
+## 版本问题
+springboot3需要对应 mybatis-plus-boot-starter <version>3.5.5</version>
+mybatis-spring-boot-starter<version>3.0.0</version>
+
+## 错误：Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+是因为mybatis-plus-boot-starter版本中存在一个mybatis-spring2.x
+![img.png](img.png)
+**解决：加入依赖mybatis-spring<version>3.0.3</version>**
+
+Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService': ...
+解决yml中加入在resources![img_1.png](img_1.png)

@@ -2,3 +2,14 @@ server:
   port: 8201
   servlet:
     context-path: /member
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/train?serverTimezone=Asia/Shanghai
+    username: root
+    password: 200358
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+
